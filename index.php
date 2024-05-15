@@ -11,10 +11,14 @@
   <section class="p-6 dark:bg-gray-500 dark:text-gray-900 ">
 	<form novalidate="" method="POST" class="container flex flex-col text-slate-500 mx-auto space-y-12 md:w-[900px]">
 		<fieldset class="grid grid-cols-4 gap-6 p-6 rounded-md shadow-sm md:rounded-l-[30px] bg-slate-300">
-			<div class="space-y-3 md:w-[200px] md:mt-[90px] col-span-full lg:col-span-1">
+			<div class="space-y-3 md:h-[300px] md:w-[200px] md:mt-[50px] col-span-full lg:col-span-1">
 				<p class="font-medium">Applyings Inormation</p>
-				<p class="text-xs">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci fuga autem eum!</p>
-			</div>
+				<p class="text-xs mb-10">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+        <!-- <input class="text-white p-1 bg-indigo-400 rounded-lg col-span-full" type="submit" name="submit" value="Checkout"> -->
+        <div class="mt-10">
+        <a class="p-1 text-white bg-indigo-400 rounded-lg" href="displaytable.php">Check Form</a>
+        </div>
+		</div>
 
 
 			<div class="grid p-3 rounded-lg  md:ps-10  md:w-[400px] md:ms-52 grid-cols-6 gap-4 col-span-full lg:col-span-3">
@@ -71,11 +75,11 @@
 
 
 
-
 <?php
 
 
 include("connection.php");
+include("links.php");
 
 if (isset($_POST['submit'])) {
 
@@ -109,4 +113,5 @@ if($res){
 }
 
 ?>
+
 
