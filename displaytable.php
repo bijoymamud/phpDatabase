@@ -1,5 +1,4 @@
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -73,8 +72,8 @@
               <?php
 
                       include("connection.php");
-                      include("update.php");
-                      include("delete.php");
+                     
+                   
 
                       //data gula kothai theke nibo oitar path dekhano hoyeche
                       $selectquery = " select * from jobregistration ";
@@ -101,12 +100,12 @@
                             
                               <!-- <button class="btn1"><a href="update.php">Edit</a></button> -->
 
-                              <a class="btn1" href="update.php">Edit</a>
+                              <a class="btn1" href="update.php?id=<?php echo $res['id'] ?>">Edit</a>
                         
                           </td>
                           <td> 
                             <!-- <button class="btn2" >Delete</button>  -->
-                            <a  class="btn2" href="delete.php">Delete</a>
+                            <a  class="btn2" href="delete.php?id=<?php echo $res['id'] ?>">Delete</a>
                             </td>
                   </tr>
 
@@ -126,54 +125,7 @@
 </table>
 
 
-  <!-- <div class="container p-2 mx-auto sm:p-4 dark:text-gray-800">
-	
-	<div class="overflow-x-auto">
-		<table class="w-full text-xs">
-			<colgroup>
-				<col>
-				<col>
-				<col>
-				<col>
-				<col>
-				<col class="w-32">
-			</colgroup>
-			<thead class="bg-green-500">
-				<tr class="text-start">
-					<th class="p-3">No.</th>
-					<th class="p-3">Name</th>
-					<th class="p-3">Degree</th>
-					<th class="p-3">Phpne</th>
-					<th class="p-3 ">Email</th>
-					<th class="p-3">Refference</th>
-					<th class="p-3">Position</th>
-					<th class="p-3">Operation</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class="border-b border-opacity-20 dark:border-gray-300 dark:bg-gray-50">
-					<td class="p-3">demo</td>
-					<td class="p-3">demo</td>
-					<td class="p-3">demo</td>
-					<td class="p-3">demo</td>
-					<td class="p-3">demo</td>
-					<td class="p-3">demo</td>
-          <td class="p-3">demo</td>
-          <td class="p-3 flex w-full justify-end gap-20">
-       
-       <button class="bg-green-500 p-1 rounded-md me-10">Update</button>
-       <i class="fa-solid fa-pen-to-square"></i>
-       
-       
-       <button class="bg-green-500 p-1 rounded-md">Delete</button>
-      
-          </td>
-				</tr>
-				
-			</tbody>
-		</table>
-	</div>
-</div> -->
+  
 
 </div>
 
